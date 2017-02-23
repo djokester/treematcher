@@ -153,7 +153,8 @@ def pattern_tree_iterator(args):
     elif args.pattern_tree_list:
         for line in open(args.pattern_tree_list):
             line = line.strip()
-            if li                yield line
+            if line:
+                yield line
 
 
 
